@@ -1,3 +1,4 @@
+// pricegeth.sol 0.8.0
 // PriceGeth - Price API on Ethereum Blockchain
 // Velocity.technology - Shayan Eskandari (shayan at bitaccess.co)
 // https://github.com/VelocityMarket/pricegeth

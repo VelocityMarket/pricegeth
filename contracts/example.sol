@@ -1,9 +1,15 @@
-import "pricegeth.sol";
+// example.sol
+// PriceGeth - Price API on Ethereum Blockchain
+// Velocity.technology - Shayan Eskandari (shayan at bitaccess.co)
+// https://github.com/VelocityMarket/pricegeth
 
-contract Example is Pricegeth {
+
+import "pricegeth.sol";
+//import "github.com/VelocityMarket/pricegeth/contracts/pricegeth.sol";
+
+contract Example {
 
   address public PriceGethAddress;
-  //Pricegeth pricegeth;
 
   function Example() {
     PriceGethAddress = 0x47501afb173cf364cca758f892c1d193c4119a43;
@@ -14,12 +20,5 @@ contract Example is Pricegeth {
   function getPrices(uint blockNumber) constant returns(uint, uint, uint, uint){
     return Pricegeth(PriceGethAddress).getPrices(blockNumber);
   }
-
-  //returns (USDBTC, BTCETH, BTCETC, BTCDOGE, BlockTimestamp)
-  /*function getPriceAtTime(uint40 timestamp) constant returns (uint, uint, uint, uint, uint){
-    uint[] memory results;
-    (results[0], results[1]) = Pricegeth(PriceGethAddress).queryTimestamp(timestamp);
-    return (getPrices(results[0]), results[1]);
-  }*/
 
 }
