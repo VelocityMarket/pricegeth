@@ -1,0 +1,8 @@
+version: 0.9.0
+tags: []
+layout:
+  sol_sources: contracts
+  build_dir: build
+dependencies: {}
+ignore: []
+name: pricegeth
