@@ -11,8 +11,8 @@ contract Pricegeth {
   //returns (USDBTC, BTCETH, BTCETC, BTCDOGE)
   function getPrices(uint blockNumber) constant returns (uint, uint, uint, uint);
 
-  //returns (BlockNumber, timestamp) right before the queried timestamp
-  //(prices can be queried using getPrices(BlockNumber) afterwards)
+  //returns (BlockNumber, timestamp) right before (<1s) the queried timestamp
+  //prices can be queried using getPrices(BlockNumber) afterwards
   function queryTimestamp(uint40 timestamp) constant returns(uint, uint);
 
   // these functions returns (PRICE, Timestamp, Blocknumber)

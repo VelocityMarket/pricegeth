@@ -31,4 +31,7 @@ contract Example {
 
 }
 ```
-__Note__ Fetching prices from PriceGeth is free and no gas is needed *Green*
+
+Checkout `pricegeth.sol` for more functionalities such as get query price by timestamp, get only one price pair, etc...
+
+__Note__ Fetching prices from PriceGeth is free and no gas is needed
