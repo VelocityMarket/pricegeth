@@ -10,7 +10,7 @@ Price API on Ethereum Blockchain
 
 
 ## Usage
-** Note that fetching prices from PriceGeth is free and no gas is needed *Green* **
+
 ```
 import "pricegeth.sol";
 //import "github.com/VelocityMarket/pricegeth/contracts/pricegeth.sol";
@@ -31,3 +31,4 @@ contract Example {
 
 }
 ```
+__Note__ Fetching prices from PriceGeth is free and no gas is needed *Green*
