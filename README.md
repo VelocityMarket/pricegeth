@@ -39,7 +39,7 @@ __Note__ Fetching prices from PriceGeth is free and no gas is needed
 
 ## Historical Data
 
-There are different ways to fetch all the data from PriceGeth. One example using [web3.py](https://github.com/pipermerriam/web3.py) is included in this repo under `Misc` directory.
+There are different ways to fetch all the data from PriceGeth. Although it's possible to do the same in Solidity within any smart-contract, Here's one example using [web3.py](https://github.com/pipermerriam/web3.py) is included in this repo under `Misc` directory.
 
 All you need is to run an Ethereum testnet RPC server.
 
