@@ -36,6 +36,28 @@ Checkout `pricegeth.sol` for more functionalities such as get query price by tim
 
 __Note__ Fetching prices from PriceGeth is free and no gas is needed
 
+## Events / Real time price updates
+On every price update PriceGeth smart contract would trigger an event called `PriceUpdated`. You can use these on UI on charts or any other application which needs (almost) real time data.
+
+`node app/app.js`
+
+example object:
+```
+{ address: '0x0731729bb6624343958d05be7b1d9257a8e802e7',
+  blockHash: '0xee272a6048d9a583d610890de408981eacfe0cbd7bab107f00be9da51288ea60',
+  blockNumber: 1667534,
+  logIndex: 1,
+  transactionHash: '0x596adc436fce0432fada47819203ab6835da3e73199e9db71083bf417a01d497',
+  transactionIndex: 1,
+  event: 'PriceUpdated',
+  args:
+   { timestamp: { [String: '1474324837'] s: 1, e: 9, c: [Object] },
+     blocknumber: { [String: '1667532'] s: 1, e: 6, c: [Object] },
+     USDBTC: { [String: '6100000076699'] s: 1, e: 12, c: [Object] },
+     BTCETH: { [String: '211199900'] s: 1, e: 8, c: [Object] },
+     BTCETC: { [String: '20989899'] s: 1, e: 7, c: [Object] },
+     BTCDOGE: { [String: '3900'] s: 1, e: 3, c: [Object] } } }
+```
 
 ## Historical Data
 
@@ -69,5 +91,3 @@ When fully synced, you can run the following to get everything:
 ...
 
 ```
-
-
