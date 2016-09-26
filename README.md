@@ -20,7 +20,7 @@ contract Example {
   address public PriceGethAddress;
 
   function Example() {
-    PriceGethAddress = 0x47501afb173cf364cca758f892c1d193c4119a43;
+    PriceGethAddress = 0x0731729bb6624343958d05be7b1d9257a8e802e7;
   }
 
   //get price at blockNumber's time
