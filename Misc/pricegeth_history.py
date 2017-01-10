@@ -58,10 +58,10 @@ def get_everything(this_contract, last_id_to_fetch = None, first_id_to_fetch = 0
 
 
 
-def fetch_all_historical_data(contract_address="0xD91d2b7AD06941333558188d6C41F01aF450CA9B"):
+def fetch_all_historical_data(contract_address="0x685c662cE0779ea3b6bBA84948CA08F04Fc877ff"):
     this_contract = init_contract(contract_address=contract_address)
     get_everything(this_contract)
 
 
 
-fetch_all_historical_data(contract_address="0x0731729bb6624343958d05be7b1d9257a8e802e7")
+fetch_all_historical_data(contract_address="0x685c662cE0779ea3b6bBA84948CA08F04Fc877ff")

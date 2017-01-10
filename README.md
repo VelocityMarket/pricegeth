@@ -4,7 +4,7 @@ Price API on Ethereum Blockchain
 
 ## How PriceGeth works
   - A server is saving Poloniex Prices (USDBTC, BTCETH, BTCETC, BTCDOGE) every 1 second
-  - PriceGeth server is listening on geth (Tesnet Morden for now) for new blocks
+  - PriceGeth server is listening on geth (Testnet Ropsten) for new blocks
   - When PriceGeth server sees a new block it fetches the price at Blocktime
   - PriceGeth server sends the data to PriceGeth smart-contract which can be used by other smart-contracts both as a price API and also a historical price ledger (Beta)
 
@@ -20,7 +20,7 @@ contract Example {
   address public PriceGethAddress;
 
   function Example() {
-    PriceGethAddress = 0x47501afb173cf364cca758f892c1d193c4119a43;
+    PriceGethAddress = 0x685c662cE0779ea3b6bBA84948CA08F04Fc877ff;
   }
 
   //get price at blockNumber's time
@@ -43,7 +43,7 @@ On every price update PriceGeth smart contract would trigger an event called `Pr
 
 example object:
 ```
-{ address: '0x0731729bb6624343958d05be7b1d9257a8e802e7',
+{ address: '0x685c662cE0779ea3b6bBA84948CA08F04Fc877ff',
   blockHash: '0xee272a6048d9a583d610890de408981eacfe0cbd7bab107f00be9da51288ea60',
   blockNumber: 1667534,
   logIndex: 1,
