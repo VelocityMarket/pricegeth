@@ -2,7 +2,7 @@
 // PriceGeth - Price API on Ethereum Blockchain
 // Velocity.technology - Shayan Eskandari (shayan at bitaccess.co)
 // https://github.com/VelocityMarket/pricegeth
-
+pragma solidity ^0.4.1;
 
 import "pricegeth.sol";
 //import "github.com/VelocityMarket/pricegeth/contracts/pricegeth.sol";

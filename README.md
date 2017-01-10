@@ -21,6 +21,7 @@ contract Example {
 
   function Example() {
     PriceGethAddress = 0x685c662cE0779ea3b6bBA84948CA08F04Fc877ff;
+
   }
 
   //get price at blockNumber's time
